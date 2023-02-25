@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CV</title>
+    <link rel="shortcut icon" href="imgs/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script src="https://kit.fontawesome.com/a7c9547ed8.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="imgenUsuario">
+            <img src="imgs/usuario.jpg" id="userImg" alt="fotoUsuario">
+        </div>
+        <h1 id="nombre">Connie Martin</h1>
+        <h2 id="profesion">Software engineer</h2>
+        <p id="descJob" class="textoEsp">Realización de software o aplicaciones de multiple uso</p>
+    </header>
+    <nav>
+        <li><a href="#AM">acerca de mí</a></li>
+        <li><a href="#ED">educación</a></li>
+        <li><a href="#HB">habilidades</a></li>
+        <li><a href="#EX">experiencia</a></li>
+        <li><a href="#CN">contacto</a></li>
+    </nav>
+    <section>
+        <div id="AM" class="container-gray">
+            <h3>acerca de mí</h3>
+
+            <div class="cards-aling">
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text">Mi nombre completo es <b id="nombre">Connie Martin</b></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text">Mi cumpleaños es <b id="cumpleaños">6/3/1966</b></p>
+                    </div>
+                </div>
+                </div>
+
+                <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <i class="fa-sharp fa-solid fa-globe"></i>
+                    </div>
+                    <div class="flip-card-back">
+                        <p class="text">Soy del <b id="nacionalidad">Salvador</b></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac augue ultricies, rutrum massa a, mattis magna. Curabitur quis metus varius, sollicitudin 
+                dui hendrerit, viverra eros. Duis et orci metus. Cras luctus euismod purus vel volutpat. Fusce rutrum, augue non bibendum consectetur, eros enim consequat odio, 
+                ac volutpat felis arcu ac nunc. Ut tempor odio eget libero ornare fermentum. Nullam eu lacus vel felis varius pellentesque.
+
+                Suspendisse ipsum ante, pretium nec iaculis et, tincidunt vitae mi. Proin dictum nisl vitae purus elementum laoreet. Duis aliquam leo eget tincidunt lobortis. Duis 
+                eros turpis, sollicitudin in sollicitudin quis, aliquet ut sapien. Cras quis malesuada quam. Donec quis diam at nunc pharetra mattis sit amet vitae dolor. Cras orci 
+                velit, hendrerit sed bibendum id, elementum quis odio. Sed quis nulla nisi. Vestibulum sagittis pellentesque velit, a condimentum libero lacinia ac. In sapien dolor, 
+                efficitur ut velit et, blandit suscipit eros. In sed enim fermentum, sodales purus molestie, interdum tellus. Curabitur sem lacus, lobortis ut tortor in, efficitur sollicitudin 
+                dolor. Integer et tortor eros. Sed fringilla tempor tortor ut bibendum.
+            </p>
+        </div>
+
+        <div id="ED" class="container-white">
+            <h3>educación</h3>
+
+            <div class="card">
+                <div class="card-border">
+                    <div class="card-right">
+                        <img src="imgs/school.jpg" alt="Escuela">
+                        <div class="card-tittle">
+                            <h4>Nombre de la escuela</h4>
+                            <p class="text-white">0000 - 0000</p>
+                        </div>
+                    </div>
+                    <div class="card-left">
+                        Praesent semper, neque cursus pellentesque semper, metus turpis convallis magna, vitae mollis erat lorem vel lectus. Vivamus fermentum purus nec commodo elementum. Vivamus tristique 
+                        diam id quam rhoncus viverra. Nulla enim orci, varius nec interdum in, facilisis vel metus. Aliquam odio risus, feugiat ac lacus nec, cursus convallis nibh. Pellentesque sodales, 
+                        dolor non lacinia pellentesque, orci nibh semper dolor, nec vulputate libero orci in libero. Phasellus nisi lectus, porta quis fringilla in, accumsan non purus. Donec in magna pharetra, 
+                        congue felis id, efficitur neque. Ut vestibulum ligula quis lorem viverra lobortis. Maecenas sed odio blandit, lobortis sapien at, placerat enim. Proin ultricies elementum placerat.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-border">
+                    <div class="card-right">
+                        <img src="imgs/university.jpg" alt="Universidad">
+                        <div class="card-tittle">
+                            <h4>Nombre de la Universidad</h4>
+                            <p class="text-white">0000 - 0000</p>
+                        </div>
+                    </div>
+                    <div class="card-left">
+                        Praesent semper, neque cursus pellentesque semper, metus turpis convallis magna, vitae mollis erat lorem vel lectus. Vivamus fermentum purus nec commodo elementum. Vivamus tristique 
+                        diam id quam rhoncus viverra. Nulla enim orci, varius nec interdum in, facilisis vel metus. Aliquam odio risus, feugiat ac lacus nec, cursus convallis nibh. Pellentesque sodales, 
+                        dolor non lacinia pellentesque, orci nibh semper dolor, nec vulputate libero orci in libero. Phasellus nisi lectus, porta quis fringilla in, accumsan non purus. Donec in magna pharetra, 
+                        congue felis id, efficitur neque. Ut vestibulum ligula quis lorem viverra lobortis. Maecenas sed odio blandit, lobortis sapien at, placerat enim. Proin ultricies elementum placerat.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="HB" class="container-gray">
+            <h3>habilidades</h3>
+
+            <div class="skills-container">
+                <div class="skills">
+                    <div class="skills-bar">
+                        <div class="bar">
+                            <div class="info">
+                            <span>HTML</span>
+                            </div>
+                            <div class="progress-line"><span class="html"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>CSS</span>
+                            </div>
+                            <div class="progress-line"><span class="css"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>BOOTSTRAP</span>
+                            </div>
+                            <div class="progress-line"><span class="bootstrap"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>JAVASCRIPT</span>
+                            </div>
+                            <div class="progress-line"><span class="javascript"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>C PROGRAMMING</span>
+                            </div>
+                            <div class="progress-line"><span class="c"></span></div>
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <span>PHYTON</span>
+                            </div>
+                            <div class="progress-line"><span class="phyton"></span></div>
+                        </div>
+                                
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div id="EX" class="container-white">
+            <h3>experiencia</h3>
+            <div class="slideshow-container">
+
+                <div class="Slides fade">
+                    <img src="imgs\temaClar.png" style="width:100%">
+                    <h4>Nombre de la empresa</h4><br>
+                    <p class="textoEsp">0000 - 0000</p>
+                      <div class="caption">Maecenas sit amet iaculis quam. Praesent cursus fermentum turpis, consectetur bibendum nisl accumsan vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                          ultrices posuere cubilia curae; Donec eget leo tellus. Quisque bibendum turpis ligula, fermentum consectetur ante auctor vitae.
+                      </div>
+                  </div>
+                
+                <div class="Slides fade">
+                  <img src="imgs\temaOsc.png" style="width:100%">
+                  <h4>Nombre de la empresa</h4><br>
+                  <p class="textoEsp">0000 - 0000</p>
+                    <div class="caption">Maecenas sit amet iaculis quam. Praesent cursus fermentum turpis, consectetur bibendum nisl accumsan vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia curae; Donec eget leo tellus. Quisque bibendum turpis ligula, fermentum consectetur ante auctor vitae.
+                    </div>
+                </div>
+                
+                <div class="Slides fade">
+                  <img src="imgs\temaClar.png" style="width:100%">
+                  <h4>Nombre de la empresa</h4><br>
+                  <p class="textoEsp">0000 - 0000</p>
+                    <div class="caption">Maecenas sit amet iaculis quam. Praesent cursus fermentum turpis, consectetur bibendum nisl accumsan vel. Vestibulum ante ipsum primis in faucibus orci luctus et 
+                        ultrices posuere cubilia curae; Donec eget leo tellus. Quisque bibendum turpis ligula, fermentum consectetur ante auctor vitae.
+                    </div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+                
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </div>
+
+    </section>
+    <footer>
+        <div id="CN" class="container-gray">
+            <h3>contacto</h3>
+                <div class="contact">
+                    <p id="telefono">(503) 717-9184</p>
+                    <p  id="direccion" style="font-size: 20px;">340 Green Rd</p>
+                    <p><a id="email" href="#">connie.martin@example.com</a></p>
+                </div>
+            <hr>
+            <div class="content-container">
+                <p> &copy; 2023 por Laura Cano</p>
+                <div class="social-media">
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>

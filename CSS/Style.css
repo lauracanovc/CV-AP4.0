@@ -1,0 +1,470 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* HEADER */
+header{
+    position: relative;
+    background-color: #7db96c;
+    align-items: flex-start;
+    height: 500px;
+    
+}
+
+#userImg{
+    float: left;
+    padding:0% 5% 0% 0%;
+    height: 500px;
+    width: 500px;
+}
+
+h1{
+    color: #FFF9F9;
+    font-size: 90px;
+    padding: 3% 0% 0%;
+}
+
+h2{
+    color: #FFF9F9;
+    font-size: 30px;
+    padding: 0% 0% 2%;
+}
+
+.textoEsp{
+    color: #3b3b3b;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    background-color: #ffffff;
+    border-left: none;
+    border-right: none;
+    overflow: auto;
+    z-index: 2;
+}
+  
+nav a {
+    float: left;
+    padding: 18px;
+    width: 20%;
+    color: #1A1A1A;
+    text-decoration: none;
+    text-align: center; 
+    font-size: 17px;
+    text-transform: uppercase;
+}
+  
+
+nav a:hover {
+    background-color: #6ea95e;
+    color: #FFF9F9;
+    font-weight: bolder;
+    transition: all linear 0.5s;
+}
+
+nav a:active {
+    background-color: #808080;
+    color: #FFF9F9;
+}
+
+
+/* SECTION */
+h3{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+}
+
+.container-gray{
+    height: max-content;
+    background-color: #00000009;
+    padding: 10px 50px;
+}
+
+.container-white{
+    height: max-content;
+    background-color: #FFFFFF;
+    padding: 10px 30px;
+}
+
+.text{
+    padding: 40px;
+}
+
+.cards-aling{
+    display: flex;
+    padding-left: 65px;
+    padding-top: 65px;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 150px;
+    perspective: 1000px;
+    margin-left: 50px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 4px 8px #6ea95e;
+    border-radius: 5px;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #7db96c;
+    color: #FFF9F9;
+    font-size: 50px;
+    padding: 50px;
+}
+
+.flip-card-back {
+    background-color: #3f7b33;
+    color: #FFF9F9;
+    transform: rotateY(180deg);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card{
+    float: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+}
+
+.card-border{
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0), 0 4px 8px rgba(0, 0, 0, 0.22);
+}
+.card-right, .card-left{
+    height: 315px;
+}
+
+.card-right{
+    background-color: #2d4226;
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.card-tittle{
+    color: #FFF9F9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-right img{
+    width: 100%;
+    height: 315px;
+    opacity: 0.5;
+}
+
+.card-left{
+    background-color: #00000009;
+    width: 60%;
+    padding: 50px 10px;
+}
+
+h4{
+    font-size: 50px;
+}
+
+.text-white{
+    color: #FFF9F9;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+}
+
+.skills {
+    position: relative;
+    width: 615px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0), 0 4px 8px rgba(0, 0, 0, 0.22);
+    margin-bottom: 35px;
+}
+
+.skills-bar {padding: 25px 30px;}
+
+.skills-bar .bar {margin: 25px 0;}
+
+.skills-bar .bar .info span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skills-bar .bar .info {
+    margin-bottom: 8px;
+    color: #07374a;
+}
+
+.skills-bar .bar .progress-line {
+    position: relative;
+    height: 10px;
+    width: 550px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+    position: absolute;
+    background: #7db96c;
+    height: 100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    text-transform: uppercase;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line .html {width: 80%;}
+
+.progress-line .css {width: 70%;}
+
+.progress-line .bootstrap {width: 82%;}
+
+.progress-line .javascript {width: 62%;}
+
+.progress-line .c {width: 90%;}
+
+.progress-line .phyton {width: 100%;}
+
+.bar .progress-line span::before {
+    position: absolute;
+    content: "";
+    height: 0;
+    right: 0;
+    top: -14px;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #4a793e;/**/
+}
+
+.bar .progress-line span::after {
+    position: absolute;
+    right: 0;
+    top: -28px;
+    color: #f0f0f0;
+    font-size: 12px;
+    font-weight: 700;
+    background: #4a793e;/**/
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.progress-line .html::after {content: "80%";}
+
+.progress-line .css::after {content: "70%";}
+
+.progress-line .bootstrap::after {content: "82%";}
+
+.progress-line .javascript::after {content: "62%";}
+
+.progress-line .c::after {content: "90%";}
+
+.progress-line .phyton::after {content: "100%";}
+
+.Slides {display: none;}
+
+.Slides img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.Slides h4, .Slides p{
+    color: #7c7c7c;
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    padding: 15px 110px;
+}
+
+.Slides p{top: 180px;}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #97c888;
+    background-color: #6ea95e;
+    font-weight: bold;
+    font-size: 25px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    opacity: 0.8;
+}
+
+.caption{
+  color: #7c7c7c;
+  font-size: 15px;
+  padding: 15px 110px;
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  text-align: start;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  cursor: pointer;
+  background-color: #71a063;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #97c888;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* FOOTER */
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    bottom: 0px;
+    padding: 20px;
+}
+
+.content-container p{
+    color: #4e4e4e;
+}
+
+.contact{
+    font-size: medium;
+    padding: 20px;
+    text-align: end;
+}
+
+.contact a{
+    cursor: pointer;
+    color: #1A1A1A;
+}
+
+.contact p{padding-bottom: 10px;}
+
+.social-media{
+    display: flexbox;
+    align-items: baseline;
+    font-size: 15px;
+}
+
+.social-media .fa-brands{
+    margin-left: 5px;
+    font-size: 40px;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+hr{border-top: 1px solid #4a793e;}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fade {
+    from {opacity: 0.8}
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 500px) {
+    nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: left; 
+    }
+
+    .containerG, .containerW {
+        height: 500px;
+    }
+
+    .contact p{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 700px) {
+    .skills{
+        width: 80%;
+    }
+
+    .skills-bar .bar .progress-line{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .caption {font-size: 11px}
+}
