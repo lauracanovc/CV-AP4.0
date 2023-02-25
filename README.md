@@ -1,2 +1,7 @@
 # CV-AP4.0
-Proyecto de cv para el programa de argentina programa 4.0 2023
+
+## Curriculum Viate
+
+El proyecto consta de la estilizacion y funcionalidad front-end para el curso de Argentia Programa 4.0
+
+*2023*
